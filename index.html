@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etsy Product Update Form</title>
+    <title>Easy Product Lister</title>
     <style>
+        .page-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-bottom: 3px solid #4CAF50;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -55,6 +67,7 @@
     </style>
 </head>
 <body>
+    <h1 class="page-title">Easy Product Lister</h1>
     <div class="grid-container" id="formsContainer"></div>
 
     <script>
@@ -98,7 +111,6 @@
                             <label>Tags:</label>
                             <div class="tags-container">`;
 
-                // Add 8 tag input fields
                 for (let j = 1; j <= 8; j++) {
                     formContent += `
                                 <div class="form-group">
