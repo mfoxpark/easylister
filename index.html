@@ -88,6 +88,11 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="mockupsLocation${i}">Mockups Location:</label>
+                            <input type="text" id="mockupsLocation${i}" maxlength="100" required>
+                        </div>
+
+                        <div class="form-group">
                             <label for="description${i}">Description:</label>
                             <textarea id="description${i}" required></textarea>
                         </div>
@@ -135,6 +140,7 @@
 
             const formData = {
                 productId: document.getElementById(`productId${formNumber}`).value,
+                mockupsLocation: document.getElementById(`mockupsLocation${formNumber}`).value,
                 description: document.getElementById(`description${formNumber}`).value,
                 category: document.getElementById(`category${formNumber}`).value,
                 tags: []
